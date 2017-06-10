@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoDemo.Views.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="20">
+        <Entry Placeholder="Name"
+           TextColor="Orange"
+           FontSize="Medium"
+           Text="{Binding User.Name}"/>
+
+        <Entry Placeholder="Email"
+           TextColor="Orange"
+           FontSize="Medium"
+           Text="{Binding User.Email}"/>
+
+        <Button Text="Registrar"
+            TextColor="White"
+            BackgroundColor="Orange"            
+            VerticalOptions="Start"
+            HorizontalOptions="CenterAndExpand"
+            Command="{Binding RegisterCommand}"/>
+
+        <Button Text="Ver Usuarios"
+            TextColor="White"
+            BackgroundColor="Orange"
+            VerticalOptions="Start"
+            HorizontalOptions="CenterAndExpand"
+            Command="{Binding ViewCommand}"/>
+    </StackLayout>
+
+
+</ContentPage>
